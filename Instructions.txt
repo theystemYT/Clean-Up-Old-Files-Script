@@ -1,0 +1,41 @@
+### Instructions for Using the Clean Up Old Files Script
+
+#### Description:
+This script scans a specified folder and deletes files that have not been accessed in the last specified number of days. It helps clean up old files to free up space.
+
+---
+
+#### Steps to Use:
+
+1. **Install Python**:
+   - If you don't have Python installed, download it from [here](https://www.python.org/downloads/) and follow the installation instructions.
+
+2. **Run the Script**:
+   - Open a terminal (Command Prompt for Windows, Terminal for macOS/Linux).
+   - Navigate to the directory where you have placed the `CleanUpOldFiles.py` script.
+     - For Windows, use: `cd path\to\your\script\directory`
+     - For macOS/Linux, use: `cd /path/to/your/script/directory`
+   - Type the following command to run the script:
+     ```
+     python CleanUpOldFiles.py
+     ```
+
+3. **Provide Folder Path and Age Limit**:
+   - When prompted, enter the full path of the folder you want to clean (e.g., `C:\Users\YourUsername\Downloads` on Windows or `/Users/YourUsername/Downloads` on macOS).
+   - Then, enter the number of days old files should be to delete them. For example, enter `30` to delete files that haven't been accessed in the last 30 days.
+
+4. **Review the Output**:
+   - The script will display the names of files that are either deleted or kept based on their age. Files older than the specified age will be deleted.
+
+---
+
+#### Example Output:
+
+
+---
+
+#### Important Notes:
+- **Be careful**: The script will permanently delete files that meet the criteria. Make sure the folder path and age limit are correct before running it.
+- If you want to use creation time instead of last accessed time to determine file age, you can modify the script by replacing `os.path.getatime(file_path)` with `os.path.getctime(file_path)`.
+
+---
