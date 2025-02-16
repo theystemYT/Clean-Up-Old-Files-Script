@@ -8,7 +8,7 @@ This script scans a specified folder and deletes files that have not been access
 #### Steps to Use:
 
 1. **Install Python**:
-   - If you don't have Python installed, download it from [here](https://www.python.org/downloads/) and follow the installation instructions.
+   - If you don't have Python installed, download it from here: https://www.python.org/downloads/ and follow the installation instructions.
 
 2. **Run the Script**:
    - Open a terminal (Command Prompt for Windows, Terminal for macOS/Linux).
